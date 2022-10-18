@@ -1,0 +1,17 @@
+.communication {
+    color: $paragraph-about-list-color;
+    text-decoration: none;
+
+    transform: scale(1);
+    transition: transform $transition-duration $timing-function, color $transition-duration $timing-function;
+
+
+    &:hover,
+    &:focus {
+            color: $accent-color;
+    
+            transform: scale(1.1);
+    
+        }
+}
+

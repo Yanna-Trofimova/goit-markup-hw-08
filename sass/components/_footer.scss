@@ -1,0 +1,241 @@
+.footer-logo {
+    display: block;
+
+    color: $pharagraph-color;
+
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.03em;
+    font-weight: 700;
+    //font-size: 26px;
+    line-height: 1.2;
+
+    text-decoration: none;
+
+    margin-bottom: 20px;
+
+    transform: scale(1);
+    transition: transform $transition-duration $timing-function;
+
+    &:hover,
+    &:focus {
+            transform: scale(1.1);
+        }
+    
+    & span {
+            color: $accent-color;
+        }
+
+                 @media screen and (min-width: 480px) {
+                    font-size: 24px;
+
+                    display: flex;
+                    justify-content: center;
+                 }
+        
+                 @media screen and (min-width: 768px) {}
+        
+                 @media screen and (min-width:1200px) {}
+}
+
+
+.footer {
+
+
+    background-color: #2F303A;
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+.footer-continer {
+    display: flex;
+   // align-items: baseline;
+
+        @media screen and (min-width: 480px) {
+            
+            justify-content: center;
+
+            flex-direction: column;
+                align-items: center;
+        }
+    
+        @media screen and (min-width: 768px) {}
+    
+        @media screen and (min-width:1200px) {}
+}
+
+
+
+.footer-list {
+    width: 231px;
+    padding: 0;
+
+    color: $paragraph-about-list-color;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+
+
+    letter-spacing: 0.03em;
+
+    font-style: normal;
+
+        @media screen and (min-width: 480px) {
+            margin-bottom: 60px;
+        }
+    
+        @media screen and (min-width: 768px) {}
+    
+        @media screen and (min-width:1200px) {}
+}
+
+
+
+.footer-address {
+    color: $pharagraph-color;
+    text-decoration: none;
+    //margin-bottom: 9px;
+
+    transform: scale(1);
+    transition: transform $transition-duration $timing-function, color $transition-duration $timing-function;
+
+    &:hover,
+    &:focus {
+            color: $accent-color;
+    
+            transform: scale(1.1);
+        }
+
+                 @media screen and (min-width: 480px) {
+                    margin-bottom: 8px;
+                 }
+        
+                 @media screen and (min-width: 768px) {}
+        
+                 @media screen and (min-width:1200px) {}
+}
+
+
+
+.footer-contact{
+   // margin-bottom: 9px;
+
+    @media screen and (min-width: 480px) {
+            margin-bottom: 8px;
+        }
+    
+        @media screen and (min-width: 768px) {}
+    
+        @media screen and (min-width:1200px) {}
+}
+
+.footer-item {
+   // margin-bottom: 9px;
+
+    &:last-child {
+            margin-bottom: 0;
+        }
+
+                @media screen and (min-width: 480px) {
+                    margin-bottom: 8px;
+                    justify-content: center;
+                    display: flex;
+                }
+        
+                @media screen and (min-width: 768px) {}
+        
+                @media screen and (min-width:1200px) {}
+}
+
+.footer-icons {
+    width: 206px;
+    height: 80px;
+    //margin-left: 70px;
+
+        @media screen and (min-width: 480px) {
+            margin-bottom: 60px;
+        }
+    
+        @media screen and (min-width: 768px) {}
+    
+        @media screen and (min-width:1200px) {}
+}
+
+.footer-icon-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    margin-bottom: 20px;
+
+    
+
+        @media screen and (min-width: 480px) {
+            display: flex;
+                justify-content: center;
+        }
+        
+            @media screen and (min-width: 768px) {}
+        
+            @media screen and (min-width:1200px) {}
+}
+
+
+.footer-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+
+}
+
+.footer-a {
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    border: none;
+
+    color: #FFF;
+
+    transform: scale(1);
+    transition: transform $transition-duration $timing-function, background-color $transition-duration $timing-function;
+
+
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+
+        transform: scale(1.1);
+    }   
+}
+
+
+.icon-footer-list {
+    display: flex;
+    justify-content: center;
+
+       
+}
+
+.link-icon-footer {
+
+    margin-right: 10px;
+
+    &:last-child {
+            margin-right: 0;
+        }
+}
+

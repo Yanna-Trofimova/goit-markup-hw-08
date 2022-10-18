@@ -1,0 +1,53 @@
+.what-do {
+    //padding-bottom: 94px;
+
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+    
+    @media screen and (min-width:1200px) {}
+}
+
+.list-do {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.list-do__item {
+    display: block;
+    margin-right: 30px;
+}
+
+.list-do__item:last-child {
+    margin-right: 0;
+}
+
+.list-do__wrapper {
+    position: relative;
+    line-height: 0;
+}
+
+.list-do__pharagraph {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    font-family: $font-main;
+    font-weight: $weight-main;
+    font-size: $size-main;
+    line-height: $height-do;
+    text-align: center;
+    letter-spacing: $spacing-main;
+    text-transform: $transform-main;
+
+    color: $pharagraph-color;
+    background: $pharagraph-background;
+}

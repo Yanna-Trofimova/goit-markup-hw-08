@@ -1,0 +1,261 @@
+
+
+.header {
+    border-bottom: 1px solid #ECECEC;
+
+        @media screen and (min-width: 480px) {
+            width: 480px;
+            margin: 0 auto;
+        }
+    
+         @media screen and (min-width: 768px) {}
+    
+        @media screen and (min-width:1200px) {}
+}
+
+.header-logo {
+    color: $h-color;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.03em;
+    font-weight: 700;
+    //font-size: 26px;
+    line-height: 1.2;
+
+    text-decoration: none;
+
+    transform: scale(1);
+    transition: transform $transition-duration $timing-function;
+
+    &:hover,
+    &:focus {
+            transform: scale(1.2);
+        }
+    
+    & span {
+            color: $accent-color;
+        }
+
+
+                @media screen and (min-width: 480px) {
+                    font-size: 24px;
+                }
+        
+                @media screen and (min-width: 768px) {}
+        
+                @media screen and (min-width:1200px) {}
+}
+
+
+
+
+.main-nav {
+    display: flex;
+    align-items: center;
+
+        @media screen and (min-width: 480px) {
+            height: 60px;
+            
+            justify-content: space-between;
+        }
+    
+        @media screen and (min-width: 768px) {}
+    
+        @media screen and (min-width:1200px) {}
+}
+
+.header-nav {
+    letter-spacing: 0.02em;
+}
+
+.header-list {
+    //display: flex;
+    //margin-left: 93px;
+
+        @media screen and (min-width: 480px) {
+            display: none;
+        }
+    
+        @media screen and (min-width: 768px) {}
+    
+        @media screen and (min-width:1200px) {}
+    
+}
+.header-list .item:not(:last-child) {
+    margin-right: 50px;
+}
+
+
+.header-item {
+
+    display: block;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: $h-color;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+
+    text-decoration: none;
+
+    position: relative;
+
+    transition: color $transition-duration $timing-function;
+
+
+    
+    
+    
+    &:hover,
+    &:focus {
+            color: $accent-color;
+        }
+}
+
+.current{
+    color: $accent-color;
+}
+
+
+ .header-item.current::after {
+    content: "";
+    display: block;
+    position: absolute;
+
+    left: 0;
+    bottom: -2px;
+
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+
+    background-color: $accent-color;
+
+    transform: scaleX(1);
+    transition: transform $transition-duration $timing-function,
+        background-color $transition-duration $timing-function;
+
+}
+
+.header-contacts {
+   // display: flex;
+   // margin-left: auto;
+
+    color: $pharagraph-background;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+
+
+    
+    &:hover,
+    &:focus {
+            color: $accent-color;
+        }
+
+                @media screen and (min-width: 480px) {
+                    display: none;
+                }
+        
+                @media screen and (min-width: 768px) {}
+        
+                @media screen and (min-width:1200px) {}
+}
+
+
+.header-contacts .item+.item {
+    margin-left: 50px;
+}
+
+.header-contact,
+.header-mail {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    display: flex;
+    align-items: center;
+
+    color: $paragraph-about-list-color;
+}
+
+
+
+
+.mail-svg {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+
+    fill: currentColor;
+}
+
+.phone-svg {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+
+    fill: currentColor;
+}
+
+.hover-mail:hover,
+.hover-mail:focus,
+.hover-contact:hover,
+.hover-contact:focus {
+    color: $accent-color;
+}
+
+
+.menu-container{
+    position: fixed;
+    
+    width: 100vw;
+    height: 100vw;
+    top: 0;
+    right: 0;
+
+    background-color: #fff;
+
+    z-index: 999;
+
+    transform: translateX(100%);
+    transition: transform $transition-duration $timing-function;
+}
+
+.menu-container .is-open{
+    transform: translateX(0);
+}
+
+.menu-toggle{
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+
+    color: #0000;
+    background-color: #fff;
+    border: none;
+
+    cursor: pointer;
+    outline: none;
+
+    @media screen and (min-width: 768px) {
+        
+    }
+}
+
+//*.header-button .header-closesvg{
+//    display: none;
+//}
+
+//.header-button .is-open .header-closesvg{
+//    display: block;
+//}
+
+//.header-button .is-open .header-burgersvg {
+  //  display: none;
+///}
+

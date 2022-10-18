@@ -1,0 +1,88 @@
+.what-do__title,
+.staff-title,
+.about__title {
+    font-weight: $weight-main;
+    //font-size: $size-title;
+    line-height: $height;
+    text-align: center;
+    letter-spacing: $spacing-main;
+
+    //margin-bottom: 50px;
+
+    @media screen and (min-width: 480px) {
+        margin-bottom: 30px;
+        font-size: 28px;
+    }
+    
+        @media screen and (min-width: 768px) {}
+    
+        @media screen and (min-width:1200px) {}
+}
+
+html {
+    box-sizing: border-box;
+}
+
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+body {
+    color: $h-color;
+    background-color: $pharagraph-color;
+
+    font-family: $font-main, sans-serif;
+    letter-spacing: $spacing-main;
+    font-weight: $weight-p;
+
+    margin: 0;
+}
+
+.container {
+    //width: 1200px;
+    //padding-left: 15px;
+    //padding-right: 15px;
+    
+    margin: 0 auto;
+   @media screen and (min-width: 480px) {
+       width: 450px;
+    }
+
+   @media screen and (min-width: 768px) {}
+
+    @media screen and (min-width:1200px) {} 
+}
+
+h1,
+h2,
+h3,
+ul,
+p {
+    margin: 0;
+}
+
+
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+
+.ull {
+    list-style: none;
+    padding: 0;
+}
+
+.about-paragraph,
+.staff-paragraph,
+.projects-paragraph {
+    color: $paragraph-about-list-color;
+}

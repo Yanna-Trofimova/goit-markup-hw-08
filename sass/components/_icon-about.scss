@@ -1,0 +1,24 @@
+.icon-about{
+
+   // width: 270px;
+    height: 120px;
+    background-color: $icon-background;
+    margin-bottom: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+        @media screen and (min-width: 480px) {
+            width: 450px;
+        }
+    
+        @media screen and (min-width: 768px) {}
+    
+        @media screen and (min-width:1200px) {}
+}
+
+ .icon-about__svg{
+     width: 70px;
+     height: 70px;
+ }

@@ -1,0 +1,132 @@
+.clients {
+
+   // padding-top: 94px;
+   // padding-bottom: 94px;
+
+    @media screen and (min-width: 480px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        }
+    
+    @media screen and (min-width: 768px) {}
+    
+    @media screen and (min-width:1200px) {}
+        
+}
+
+.clients-container {
+    //max-width: 1170px;
+
+
+     max-width: 450px;
+     
+
+    @media screen and (min-width: 768px) {}
+
+     @media screen and (min-width:1200px) {}
+
+}
+
+.clients-title {
+    font-family: 'Roboto';
+    font-weight: 700;
+    //font-size: 36px;
+    //line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+
+   //margin-bottom: 50px;
+
+    
+    @media screen and (min-width: 480px) {
+        font-size: 28px;
+        line-height: 33px;
+        margin-bottom: 30px;
+    }
+    
+    @media screen and (min-width: 768px) {}
+    
+    @media screen and (min-width:1200px) {}
+}
+
+
+.clients-list {
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: 480px) {
+        display: flex;
+        flex-wrap: wrap;
+         margin: -15px;
+    }
+
+     @media screen and (min-width: 768px) {}
+
+     @media screen and (min-width:1200px) {}
+
+}
+
+
+
+.clients-item {
+   //margin-right: 30px;
+   //&:last-child{margin: 0;
+
+
+     
+
+    @media screen and (min-width: 480px) {
+        width: calc(100% - 4 * 15px) / 2;
+        margin: 15px;
+    }
+
+    @media screen and (min-width: 768px) {}
+
+    @media screen and (min-width:1200px) {}
+        
+}
+
+.clients-a {
+    width: 210px;
+    height: 92px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #AFB1B8;
+
+    color: #AFB1B8;
+
+    transform: scale(1);
+    transition: transform $transition-duration $timing-function, background-color $transition-duration $timing-function, color $transition-duration $timing-function;
+
+
+    &:hover,
+     &:focus {
+            color: $accent-color;
+            border: 1px solid $accent-color;
+    
+            transform: scale(1.1);
+        }
+
+                @media screen and (min-width: 480px) {
+                    //width: 210px;
+                    
+                }
+        
+                @media screen and (min-width: 768px) {}
+        
+                @media screen and (min-width:1200px) {}
+}
+
+
+.clients-svg {
+    width: 106px;
+    height: 60px;
+
+    fill: currentColor;
+}
+
