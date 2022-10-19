@@ -59,7 +59,7 @@
       <!--Mobile menu-->
 
       <button type="button" class="menu-toggle  js-open-menu " aria-expanded="false" aria-controls="mobile-menu">
-        <svg width="40px" height="40px" aria-label="перемикач мобільного меню">
+        <svg width="40px" height="40px" aria-label="перемикач мобільного меню" class="svg-hover">
           <use class="header-burgersvg" href="./image/icon.svg#burger"></use>
         </svg>
       </button>
@@ -67,43 +67,38 @@
 
 
       <div class="menu-container js-menu-container" id="mobile-menu">
-      <button type="button" class="menu-toggle  js-close-menu " >
+      <button type="button" class="menu-toggle mob-close  js-close-menu " >
         <svg 
         width="40px"
         height="40px"
-        aria-label="перемикач мобільного меню">
+        aria-label="перемикач мобільного меню"
+        class="svg-hover">
           <use class="header-closesvg" href="./image/icon.svg#button-close"></use>
         </svg>
       </button>
 
-        <nav class="mobile-nav ">
+        <nav class="mobile-nav">
           
          <ul class="mobile-list ull">
-            <li class="item"><a href="./index.html" class="header-item ">Студія</a></li>
-            <li class="item"><a href="./portfolio.html" class="header-item">Портфоліо</a></li>
-            <li class="item"><a href="" class="header-item">Контакти</a></li>
+            <li class="item"><a href="./index.html" class="mobile-item current">Студія</a></li>
+            <li class="item"><a href="./portfolio.html" class="mobile-item">Портфоліо</a></li>
+            <li class="item"><a href="" class="mobile-item">Контакти</a></li>
           </ul>
         
         </nav>
    
         <ul class="mobile-contacts ull">
-        
-          <li class="item hover-mail"><a href="mail:info@devstudio.com" class="header-mail communication">
-        
-              <svg class="mail-svg">
-                <use href="./image/icon.svg#mail-icon"></use>
-              </svg>
-        
-              info@devstudio.com</a></li>
+
         
         
-          <li class="item hover-contact"><a href="tel:+380961111111" class="header-contact communication">
-        
-              <svg class="phone-svg">
-                <use href="./image/icon.svg#smartphone"></use>
-              </svg>
-        
+          <li class="item hover-contact "><a href="tel:+380961111111" class="mobile-contact ">
+      
               +38 096 111 11 11</a></li>
+
+          
+          <li class="item hover-mail"><a href="mail:info@devstudio.com" class="mobile-mail communication">
+          
+              info@devstudio.com</a></li>
         
         </ul>
 
@@ -111,10 +106,10 @@
         <nav class="mobile-social">
         
           <ul class="social-list ull">
-            <li class="item"><a href="" class="socail-item ">Instagram</a></li>
-            <li class="item"><a href="" class="socail-item">Twitter</a></li>
-            <li class="item"><a href="" class="socail-item">Facebook</a></li>
-            <li class="item"><a href="" class="socail-item">LinkedIn</a></li>
+            <li class="item"><a href="" class="socail-item pad-right">Instagram</a></li>
+            <li class="item"><a href="" class="socail-item border-mob">Twitter</a></li>
+            <li class="item"><a href="" class="socail-item border-mob">Facebook</a></li>
+            <li class="item"><a href="" class="socail-item pad-left">LinkedIn</a></li>
           </ul>
         
         </nav>
