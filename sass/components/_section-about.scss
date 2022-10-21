@@ -7,23 +7,48 @@
             padding-bottom: 60px;
     }
     
-        @media screen and (min-width: 768px) {}
+    @media screen and (min-width: 768px) {
+            padding-top: 60px;
+            padding-bottom: 45px;
+        }
+       
     
-        @media screen and (min-width:1200px) {}
+        @media screen and (min-width:1200px) {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
+}
+
+.about__container{
+    @media screen and (min-width: 768px) {
+        width: 768px;
+        margin: 0;
+    }
+    
+   @media screen and (min-width:1200px) {
+        max-width: 1200px;
+   }
 }
 
 .list-about {
     display: flex;
-    flex-wrap: wrap;
+    
+
+        @media screen and (min-width: 480px) {
+            flex-wrap: wrap;
+        }
+    
+        @media screen and (min-width: 768px) {
+            //margin: -15px;
+        }
+    
+        @media screen and (min-width:1200px) {
+            flex-wrap: nowrap;
+        }
 }
 
 .list-about__item{
    
-    //margin-right: 30px;
-
-    //&:last-child {
-          //  margin-right: 0;
-        //}
 
                 @media screen and (min-width: 480px) {
                     &:not(:last-child){
@@ -32,11 +57,25 @@
                        
                 }
         
-                @media screen and (min-width: 768px) {}
-        
-                @media screen and (min-width:1200px) {}
-    }
+                @media screen and (min-width: 768px) {
+                    width: 50%;
+                    padding: 15px;
 
+                    margin-bottom: 15px;
+                }
+        
+                @media screen and (min-width:1200px) {
+                    margin-right: 30px;
+                        padding: 0;
+                        margin-bottom: 0;
+                        width: 270px;
+                    
+                    &:last-child {
+                        margin-right: 0;
+                }
+                     
+    }
+}
 
 
 .list-about__item>h3 {
@@ -52,9 +91,13 @@
 
          }
     
-        @media screen and (min-width: 768px) {}
+        @media screen and (min-width: 768px) {
+           text-align: start;
+        }
     
-        @media screen and (min-width:1200px) {}
+        @media screen and (min-width:1200px) {
+            text-align: center;
+        }
 }
 
 .list-about__item>p {
@@ -68,10 +111,6 @@
     margin-bottom: 10px;
 }
 
-.list-about__paragraph {
+.list-about__paragraph{
     color: $paragraph-about-list-color;
-
-    
-
-       
 }

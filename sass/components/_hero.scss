@@ -1,6 +1,4 @@
 .hero{
-    //max-width: 1600px;
-    //height: 600px;
     margin-left: auto;
     margin-right: auto;
 
@@ -16,8 +14,6 @@
     letter-spacing: 0.06em;
 
     text-align: center;
-    //padding-bottom: 200px;
-    //padding-top: 200px;
 
         @media screen and (min-width: 480px) {
             max-width: 480px;
@@ -29,24 +25,21 @@
     
         @media screen and (min-width: 768px) {
             max-width: 768px;
-            height: 400px;
-
-            padding-bottom: 118px;
-            padding-top: 118px;
         }
     
-        @media screen and (min-width:1200px) {}
+        @media screen and (min-width:1200px) {
+            max-width: 1600px;
+            height: 600px;
+
+            padding-bottom: 200px;
+            padding-top: 200px;
+        }
 }
 
 .hero-title {
     color: $pharagraph-color;
 
-   // width: 696px;
-
     font-weight: 900;
-    //font-size: 44px;
-    //line-height: 1.4;
-    /* or 136% */
 
     text-align: center;
     letter-spacing: 0.06em;
@@ -62,7 +55,11 @@
             line-height: 1.6;
         }
     
-        @media screen and (min-width:1200px) {}
+        @media screen and (min-width:1200px) {
+            max-width: 696px;
+            font-size: 44px;
+            line-height: 1.4;
+        }
 }
 
 .hero-btn {
@@ -85,9 +82,7 @@
 
 
     border-radius: 4px;
-    //padding: 10px 32px;
     display: inline-block;
-    //min-width: 216px;
     border: 1px solid transparent;
 
 
@@ -105,6 +100,9 @@
                 }
 
         
-                @media screen and (min-width:1200px) {}
+                @media screen and (min-width:1200px) {
+                    min-width: 216px;
+                    padding: 10px 32px;
+                }
 }
 

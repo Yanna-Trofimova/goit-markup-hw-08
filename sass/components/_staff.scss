@@ -9,9 +9,20 @@
             padding-bottom: 60px;
         }
     
-        @media screen and (min-width: 768px) {}
+        @media screen and (min-width: 768px) {
+            padding-top: 60px;
+            padding-bottom: 45px;
+        }
     
         @media screen and (min-width:1200px) {}
+}
+
+.staff-container{
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+        margin: 0;
+    }
+
 }
 
 .staff-list {
@@ -47,7 +58,16 @@
 
     }
 
-    @media screen and (min-width: 768px) {}
+    @media screen and (min-width: 768px) {
+        max-width: 354px;
+        width: 50%;
+        
+        margin: 15px;
+
+        &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+    }
 
     @media screen and (min-width:1200px) {}
 
@@ -96,7 +116,10 @@
             height: 460px;
         }
     
-        @media screen and (min-width: 768px) {}
+        @media screen and (min-width: 768px) {
+            width: 354px;
+            height: 374px;
+        }
     
         @media screen and (min-width:1200px) {}
 }
