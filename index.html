@@ -302,21 +302,50 @@
           <ul class="list-do ull">
             <li  class="list-do__item">
               <div class="list-do__wrapper">
-              <img src="./image/img.jpg" alt="клавіатура" width="370" height="294" />
+                <picture>
+                  <source srcset="
+                    ./image/do1-1x.jpg 1x,
+                     ./image/do1-2x.jpg 2x
+                     " media="(min-width: 1200px)">
+                
+                
+              <img src="./image/do1-1x.jpg" alt="клавіатура" width="370" height="294" />
+                </picture>
+
               <p class="list-do__pharagraph">Десктопні додатки</p>
               </div>
             </li>
 
             <li class="list-do__item">
               <div class="list-do__wrapper">
-              <img src="./image/img-1.jpg" alt="телефон" width="370" height="294" />
+                <picture>
+                  <source srcset="
+                      ./image/do2-1x.jpg 1x,
+                      ./image/do2-2x.jpg 2x
+                      " media="(min-width: 1200px)">
+                
+                
+                  <img src="./image/do2-1x.jpg" alt="телефон" width="370" height="294" />
+                </picture>
+             
               <p class="list-do__pharagraph">Мобільні додатки</p>
               </div>
             </li>
 
             <li class="list-do__item">
               <div class="list-do__wrapper">
-              <img src="./image/img-2.jpg" alt="планшет" width="370" height="294" />
+
+                <picture>
+                  <source srcset="
+                    ./image/do3-1x.jpg 1x,
+                     ./image/do3-2x.jpg 2x
+                     " 
+                     media="(min-width: 1200px)">
+                
+                
+                <img src="./image/do3-1x.jpg" alt="планшет" width="370" height="294" />
+                </picture>
+              
               <p class="list-do__pharagraph">Дизайнерські рішення</p>
               </div>
             </li>
@@ -333,7 +362,32 @@
           
           <ul class="staff-list ull">
             <li class="staff-item">
-              <img src="./image/staff-1.jpg" alt="Ігор Дем'яненко"  class="staff-img" />
+
+              <picture>
+                <source srcset="
+                    ./image/staff-desk1-1x.jpg 1x,
+                    ./image/staff-desk1-2x.jpg 2x
+                    "
+                     media="(min-width: 1200px)">
+                
+                <source srcset="
+                     ./image/staff-tab1-1x.jpg 1x,
+                     ./image/staff-tab1-2x.jpg 2x
+                    " 
+                        media="(min-width: 768px)">
+                <source 
+                  srcset="
+                    ./image/staff-mob1-1x.jpg 1x,
+                    ./image/staff-mob1-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                >
+                <img src="./image/staff-desk1-1x.jpg" alt="Ігор Дем'яненко" class="staff-img" />
+              </picture>
+
+              
+
+
               <h3 class="staff-h">Ігор Дем'яненко</h3>
               <p class="staff-paragraph">Product Designer</p>
 
@@ -371,7 +425,26 @@
             </li>
           
             <li class="staff-item">
-              <img src="./image/staff-2.jpg" alt="Ольга Рєпіна"  class="staff-img" />
+
+
+              <picture>
+                <source srcset="
+                                  ./image/staff-desk2-1x.jpg 1x,
+                                  ./image/staff-desk2-2x.jpg 2x
+                                  " media="(min-width: 1200px)">
+              
+                <source srcset="
+                                   ./image/staff-tab2-1x.jpg 1x,
+                                   ./image/staff-tab2-2x.jpg 2x
+                                  " media="(min-width: 768px)">
+                <source srcset="
+                                  ./image/staff-mob2-1x.jpg 1x,
+                                  ./image/staff-mob2-2x.jpg 2x
+                                " media="(max-width: 767px)">
+                <img src="./image/staff-desk2-1x.jpg" alt="Ольга Рєпіна" class="staff-img" />
+              </picture>
+
+              
               <h3 class="staff-h">Ольга Рєпіна</h3>
               <p class="staff-paragraph">Frontend Developer</p>
 
@@ -408,7 +481,24 @@
             </li>
           
             <li class="staff-item">
-              <img src="./image/staff-3.jpg" alt="Микола Тарасов"  class="staff-img" />
+
+              <picture>
+                <source srcset="
+                                                ./image/staff-desk3-1x.jpg 1x,
+                                                ./image/staff-desk3-2x.jpg 2x
+                                                " media="(min-width: 1200px)">
+              
+                <source srcset="
+                                                 ./image/staff-tab3-1x.jpg 1x,
+                                                 ./image/staff-tab3-2x.jpg 2x
+                                                " media="(min-width: 768px)">
+                <source srcset="
+                                                ./image/staff-mob3-1x.jpg 1x,
+                                                ./image/staff-mob3-2x.jpg 2x
+                                              " media="(max-width: 767px)">
+                <img src="./image/staff-desk3-1x.jpg" alt="Микола Тарасов" class="staff-img" />
+              </picture>
+
               <h3 class="staff-h">Микола Тарасов</h3>
               <p class="staff-paragraph">Marketing</p>
 
@@ -445,7 +535,24 @@
             </li>
           
             <li class="staff-item">
-              <img src="./image/staff-4.jpg" alt="Михайло Єрмаков"  class="staff-img" />
+
+              <picture>
+                <source srcset="
+                                                ./image/staff-desk4-1x.jpg 1x,
+                                                ./image/staff-desk4-2x.jpg 2x
+                                                " media="(min-width: 1200px)">
+              
+                <source srcset="
+                                                 ./image/staff-tab4-1x.jpg 1x,
+                                                 ./image/staff-tab4-2x.jpg 2x
+                                                " media="(min-width: 768px)">
+                <source srcset="
+                                                ./image/staff-mob4-1x.jpg 1x,
+                                                ./image/staff-mob4-2x.jpg 2x
+                                              " media="(max-width: 767px)">
+                <img src="./image/staff-desk4-1x.jpg" alt="Михайло Єрмаков" class="staff-img" />
+              </picture>
+            
               <h3 class="staff-h">Михайло Єрмаков</h3>
               <p class="staff-paragraph">UI Designer</p>
 
