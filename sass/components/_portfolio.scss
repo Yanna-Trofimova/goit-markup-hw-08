@@ -17,7 +17,10 @@
             padding-bottom: 30px;
         }
     
-        @media screen and (min-width:1200px) {}
+        @media screen and (min-width:1200px) {
+            padding-bottom: 94px;
+            padding-top: 94px;
+        }
 }
 
 
@@ -42,7 +45,9 @@
             margin-bottom: 30px;
         }
     
-        @media screen and (min-width:1200px) {}
+        @media screen and (min-width:1200px) {
+            margin-bottom: 50px;
+        }
 }
 
 .portfolio-li {

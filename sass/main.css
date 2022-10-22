@@ -626,7 +626,6 @@ p {
 @media screen and (min-width: 1200px) {
   .what-do {
     display: flex;
-    padding-bottom: 94px;
   }
 }
 

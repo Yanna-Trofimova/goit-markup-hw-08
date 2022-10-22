@@ -1,9 +1,6 @@
 .staff {
     background-color: #F5F4FA;
 
-    //padding-top: 94px;
-    //padding-bottom: 94px;
-
         @media screen and (min-width: 480px) {
             padding-top: 60px;
             padding-bottom: 60px;
@@ -14,14 +11,21 @@
             padding-bottom: 45px;
         }
     
-        @media screen and (min-width:1200px) {}
+        @media screen and (min-width:1200px) {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
 }
 
 .staff-container{
     @media screen and (min-width: 768px) {
         max-width: 768px;
-        margin: 0;
+        margin: 0 auto;
     }
+        @media screen and (min-width:1200px) {
+            max-width: 1170px;
+            padding: 0;
+        }
 
 }
 
@@ -34,23 +38,20 @@
             flex-wrap: wrap;
         }
     
-        @media screen and (min-width: 768px) {}
-    
-        @media screen and (min-width:1200px) {}
+        @media screen and (min-width:1200px) {
+            flex-wrap: nowrap;
+        }
 
 }
 
 
 .staff-item {
     background-color: #ffffff;
-   // margin-right: 30px;
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 
-   // &:last-child {
-   //         margin-right: 0;
-   //     }
+
      @media screen and (min-width: 480px) {
      &:not(:last-child) {
          margin-bottom: 30px;
@@ -69,7 +70,19 @@
             }
     }
 
-    @media screen and (min-width:1200px) {}
+    @media screen and (min-width:1200px) {
+        margin: 0 auto;
+        margin-right: 30px;
+        max-width: 270px;
+        width: 100%;
+
+        &:last-child {
+                    margin-right: 0;
+         }
+                 &:not(:last-child) {
+                     margin-bottom: 0;
+                 }
+    }
 
 }
 
@@ -94,22 +107,19 @@
     text-align: center;
     letter-spacing: 0.03em;
 
-    //padding-bottom: 30px;
-
     @media screen and (min-width: 480px) {
             margin-bottom: 16px;
         }
     
-        @media screen and (min-width: 768px) {}
-    
-        @media screen and (min-width:1200px) {}
+        @media screen and (min-width:1200px) {
+            padding-bottom: 30px;
+            margin-bottom: 0;
+        }
 }
 
 .staff-img {
     display: block;
     margin-bottom: 30px;
-   // width: 270px;
-     //height: 260px;
 
         @media screen and (min-width: 480px) {
             width: 450px;
@@ -121,15 +131,15 @@
             height: 374px;
         }
     
-        @media screen and (min-width:1200px) {}
+        @media screen and (min-width:1200px) {
+            width: 270px;
+            height: 260px;
+        }
 }
 
 .icon-staff-list {
     display: flex;
     justify-content: center;
-
-
-    //padding-bottom: 30px;
 
         @media screen and (min-width: 480px) {
             padding-bottom: 24px;
@@ -137,7 +147,9 @@
     
         @media screen and (min-width: 768px) {}
     
-        @media screen and (min-width:1200px) {}
+        @media screen and (min-width:1200px) {
+            padding-bottom: 30px;
+        }
 
 }
 
