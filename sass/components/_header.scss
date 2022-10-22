@@ -3,6 +3,11 @@
 .header {
     border-bottom: 1px solid #ECECEC;
 
+    @media screen and (min-width: 320px) {
+            max-width: 480px;
+            margin: 0 auto;
+        }
+
         @media screen and (min-width: 480px) {
             max-width: 480px;
             margin: 0 auto;
@@ -38,7 +43,9 @@
     & span {
             color: $accent-color;
         }
-
+                                @media screen and (min-width: 320px) {
+                                    font-size: 24px;
+                                }
 
                 @media screen and (min-width: 480px) {
                     font-size: 24px;
@@ -57,6 +64,12 @@
 .main-nav {
     display: flex;
     align-items: center;
+
+        @media screen and (min-width: 320px) {
+                height: 60px;
+        
+                justify-content: space-between;
+            }
 
         @media screen and (min-width: 480px) {
             height: 60px;
@@ -79,6 +92,11 @@
 }
 
 .header-list {
+
+        @media screen and (min-width: 320px) {
+                display: none;
+                margin-left: 87px;
+            }
         @media screen and (min-width: 480px) {
             display: none;
             margin-left: 87px;
@@ -164,7 +182,9 @@
     &:focus {
             color: $accent-color;
         }
-
+                @media screen and (min-width: 320px) {
+                                    display: none;
+                                }
                 @media screen and (min-width: 480px) {
                     display: none;
                 }

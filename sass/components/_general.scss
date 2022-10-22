@@ -7,6 +7,11 @@
     text-align: center;
     letter-spacing: $spacing-main;
 
+    @media screen and (min-width: 320px) {
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+
     @media screen and (min-width: 480px) {
         margin-bottom: 30px;
         font-size: 28px;
@@ -52,18 +57,19 @@ body {
 
 .container {
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
    @media screen and (min-width: 480px) {
-       max-width: 450px;
+       max-width: 480px;
     }
 
    @media screen and (min-width: 768px) {
-        max-width: 738px;
+        max-width: 768px;
    }
 
     @media screen and (min-width:1200px) {
-        max-width: 1170px;
-        //padding-left: 15px;
-        //padding-right: 15px;
+        max-width: 1200px;
+        
     } 
 }
 
@@ -73,9 +79,7 @@ body {
             margin: 0;
         }
 
-     @media screen and (min-width:1200px) {
-        max-width: 1200px;
-        }
+    
 }
 
 h1,

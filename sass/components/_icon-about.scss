@@ -1,9 +1,10 @@
 .icon-about{
+    display: flex;
     height: 120px;
     background-color: $icon-background;
     margin-bottom: 30px;
 
-    display: flex;
+    
     justify-content: center;
     align-items: center;
     
@@ -13,6 +14,7 @@
     
         @media screen and (min-width: 768px) {
             width: 354px;
+            
         }
     
         @media screen and (min-width:1200px) {
