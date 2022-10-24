@@ -350,15 +350,15 @@
         }
 
     @media screen and (min-width: 480px) {
-        width: 450px;
+        max-width: 450px;
         height: 156px;
     }
 
     @media screen and (min-width:1200px) {
-        width: 570px;
+        max-width: 570px;
         height: 86px;
 
-        margin-left: 93px;
+        margin-left: 70px;
     }
 }
 
